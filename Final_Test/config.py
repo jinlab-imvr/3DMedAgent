@@ -39,7 +39,7 @@ CTCLIP_MODEL_PATH = CTCLIP_PROJECT_ROOT / "models" / "CT-CLIP_v2.pt"
 MAX_CONCURRENCY = int(os.environ.get("FINAL_TEST_MAX_CONCURRENCY", "6"))
 MAX_RETRIES = int(os.environ.get("FINAL_TEST_MAX_RETRIES", "3"))
 BASE_BACKOFF = float(os.environ.get("FINAL_TEST_BASE_BACKOFF", "1.5"))
-MODEL_NAME = os.environ.get("FINAL_TEST_OPENAI_MODEL", "gpt-5-mini")
+MODEL_NAME = os.environ.get("FINAL_TEST_OPENAI_MODEL", "gpt-5")
 
 SYSTEM_PROMPT = "You are a careful medical imaging assistant. Always output STRICT JSON only."
 
