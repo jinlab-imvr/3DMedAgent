@@ -1,0 +1,43 @@
+defaults:
+  - model: biomedparse
+  - datamodule: biomedparse_finetune_datamodule
+  - trainer: biomedparse_trainer
+  - evaluator: biomedparse_evaluator
+  - loss: biomedparse_loss
+  - optimizer: adamw
+  - olympus_checkpoint: biomedparse_checkpoint_loader
+  - _self_
+
+
+mounts:
+  external: <YOUR MODEL AND DATA DIR>
+project_name: biomedparse
+experiment_output_dir: ${mounts.external}/outputs
+
+datamodule:
+  dataloaders:
+    train:
+      batch_size: 8
+    validate:
+      batch_size: 8
+    test:
+      batch_size: 8
+  validate_split_ratio: 0.1
+
+trainer:
+  max_epochs: 10
+
+loss:
+  cls_coeff: 1.0
+  pos_weight: 3.0
+  edge_coeff: 1.0
+
+model:
+  convolute_outputs: False
+  out_channels_1: 16
+  edge_queries: 4
+
+optimizer:
+  lr: 0.00001
+
+mode: "train"

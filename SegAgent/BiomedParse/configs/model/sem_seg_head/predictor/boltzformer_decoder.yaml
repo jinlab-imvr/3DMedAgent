@@ -1,0 +1,25 @@
+defaults:
+  - language_encoder: seem_language_encoder
+  # - attn_arch: seem_attn
+_target_: src.model.transformer_decoder.boltzformer_cls_decoder.BoltzFormerTextDecoder
+in_channels: 512
+hidden_dim: 512
+dim_proj: 512
+num_queries: 16
+nheads: 8
+dim_feedforward: 2048
+pre_norm: false
+enforce_input_project: false
+dec_layers: 9
+mask_dim: 512
+# task_switch:
+#   mask: True
+#   bbox: False
+#   grounding: true
+#   spatial: False
+boltzmann_sampling:
+  mask_threshold: 1.1
+  do_boltzmann: True
+  sample_ratio: 0.1
+  base_temp: 1
+pre_self_attention: True

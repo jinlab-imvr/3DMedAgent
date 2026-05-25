@@ -1,0 +1,6 @@
+defaults:
+  - backbone: d2focal
+  - sem_seg_head: biomedparse_maskformer_head
+_target_: src.model.biomedparse.BiomedParseModel
+convolute_outputs: False
+out_channels_1: 16

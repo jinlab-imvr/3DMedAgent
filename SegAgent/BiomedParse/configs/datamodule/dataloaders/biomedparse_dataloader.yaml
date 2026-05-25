@@ -1,0 +1,17 @@
+_target_: azureml.acft.image.components.olympus.core.ModuleDataLoaders
+train:
+  _target_: torch.utils.data.DataLoader
+  _partial_: True
+  batch_size: 1
+  num_workers: 5
+  shuffle: True
+validate:
+  _target_: torch.utils.data.DataLoader
+  _partial_: True
+  batch_size: 1
+  num_workers: 5
+test:
+  _target_: torch.utils.data.DataLoader
+  _partial_: True
+  batch_size: 1
+  num_workers: 5

@@ -1,0 +1,3 @@
+from .BiomedParse.BiomedParse_Segmentator import BiomedParse_Segmentator
+from .VISTA3d.vista3d_Segmentator import Vista3D_Segmentator
+from .TotalSegmentator import run_totalsegmentator_cli

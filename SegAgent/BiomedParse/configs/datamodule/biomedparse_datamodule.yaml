@@ -1,0 +1,7 @@
+defaults:
+  - datasets/biomedparse@datasets: biomedparse_dataset
+  - dataloaders: biomedparse_dataloader
+  - _self_
+_target_: azureml.acft.image.components.olympus.core.OlympusDataModule
+split_train_validate: True
+

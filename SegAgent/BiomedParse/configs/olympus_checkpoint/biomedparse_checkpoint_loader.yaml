@@ -1,0 +1,5 @@
+load_checkpoint: True
+loader:
+  _target_: azureml.acft.image.components.olympus.loaders.ModelCheckpointLoaderBase #olympus_core.loaders.checkpoint_loader.OlympusDeepspeedCheckpointLoader
+  strict: False
+  checkpoint_path: ${mounts.external}/biomedparse_v2.ckpt

@@ -1,0 +1,31 @@
+VARIABLE:
+  queries: ['object', 'grounding', 'spatial']
+  tokens: ['grounding', 'spatial']
+  memories: ['spatial']
+SELF_ATTENTION:
+  queries:
+    object: ['queries_object']
+    grounding: ['queries_grounding', 'tokens_grounding']
+    spatial: ['queries_spatial', 'tokens_spatial', 'memories_spatial']
+  tokens:
+    grounding: ['queries_grounding', 'tokens_grounding']
+    spatial: ['tokens_spatial']
+  memories:
+    spatial: ['memories_spatial']
+CROSS_ATTENTION:
+  queries:
+    object: True
+    grounding: True
+    spatial: True
+  memories:
+    spatial: True
+  tokens:
+    grounding: False
+    spatial: False
+MASKING: ['tokens_spatial', 'tokens_grounding']
+DUPLICATION:
+  queries:
+    grounding: 'queries_object'
+    spatial: 'queries_object'
+SPATIAL_MEMORIES: 32
+QUERY_NUMBER: 3

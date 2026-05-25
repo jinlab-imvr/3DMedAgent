@@ -1,0 +1,81 @@
+{
+  "CT": {
+    "Abdomen": [
+      "Adrenal gland", "Celiac trunk", "Duodenum", "Gallbladder",
+      "Inferior vena cava", "Intestine", "Kidney", "Liver",
+      "Pancreas", "Small bowel", "Spleen", "Stomach"
+    ],
+    "Brain": [
+      "Brainstem", "Temporal lobe", "Brain"
+    ],
+    "Head and neck": [
+      "Brain", "Carotid artery", "Cervical esophagus", "Cheek",
+      "Cochleas", "Eustachian tube bone", "Eyeball", "Lacrimal gland",
+      "Lens", "Mandible", "Middle ear", "Optic nerve", "Parotid gland",
+      "Submandibular gland", "Thyroid gland", "Tympanic cavity"
+    ],
+    "Spine": [
+      "Lumbar vertebrae", "Sacrum", "Spinal canal", "Spinal cord",
+      "Thoracic vertebrae"
+    ],
+    "Thorax": [
+      "Autochthon", "Breast", "Heart atrium", "Lung",
+      "Rib", "Myocardium", "Thoracic cavity", "Thymus"
+    ],
+    "Upper limb": [
+      "Clavicle", "Humerus", "Scapula"
+    ],
+    "Lower limb": [
+      "Head of femur", "Femur bone", "Tibia bone"
+    ],
+    "Pelvis": [
+      "Gluteus maximus", "Gluteus medius", "Gluteus minimus",
+      "Hip", "Iliopsoas", "Iliac vena", "Urinary bladder",
+      "Uterocervix", "Uterus"
+    ],
+    "Whole body": [
+      "Bone", "Fat", "Muscle", "Skin"
+    ],
+    "Lesions": [
+      "Liver tumor", "Lung nodule"
+    ]
+  },
+
+  "MRI": {
+    "Abdomen": [
+      "Kidney", "Liver", "Pancreas", "Spleen"
+    ],
+    "Brain": [
+      "Hippocampus", "Brain ventricle", "Cerebellum",
+      "Parietal lobe", "Optic radiation", "Thalamus"
+    ],
+    "Head and neck": [
+      "Brain"
+    ],
+    "Spine": [
+      "Intervertebral discs", "Lumbar vertebrae",
+      "Sacrum", "Thoracic vertebrae"
+    ],
+    "Thorax": [
+      "Heart ventricle"
+    ],
+    "Lower limb": [
+      "Femur cartilage", "Tibia cartilage"
+    ],
+    "Pelvis": [
+      "Prostate"
+    ],
+    "Lesions": [
+      "Myocardial edema", "Stroke", "Head and neck tumor"
+    ]
+  },
+
+  "PET": {
+    "Whole body": [
+      "Lymph node"
+    ],
+    "Lesions": [
+      "Tumor"
+    ]
+  }
+}

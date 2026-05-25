@@ -1,0 +1,26 @@
+defaults:
+  - model: biomedparse_3D
+  - datamodule: biomedparse_datamodule
+  - trainer: biomedparse_trainer
+  - evaluator: biomedparse_3D_evaluator
+  - loss: biomedparse_loss
+  - optimizer: adamw
+  - olympus_checkpoint: biomedparse_checkpoint_loader
+  - _self_
+
+mounts:
+  external: <YOUR MODEL AND DATA DIR>
+project_name: biomedparse
+experiment_output_dir: ${mounts.external}/outputs
+
+datamodule:
+  dataloaders:
+    test:
+      batch_size: 1
+
+model:
+  convolute_outputs: False
+  out_channels_1: 16
+  edge_queries: 4
+
+mode: "test"
