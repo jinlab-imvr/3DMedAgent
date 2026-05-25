@@ -1,0 +1,98 @@
+{
+  "organ_masks": {
+    "liver": [
+      "segmentations/liver.nii.gz",
+      "segmentations/_liver_.nii.gz"
+    ],
+    "spleen": [
+      "segmentations/spleen.nii.gz",
+      "segmentations/_spleen_.nii.gz"
+    ],
+    "kidney": {
+      "right": [
+        "segmentations/kidney_right.nii.gz",
+        "segmentations/_kidney_right.nii.gz"
+      ],
+      "left": [
+        "segmentations/kidney_left.nii.gz",
+        "segmentations/_kidney_left.nii.gz"
+      ]
+    },
+    "pancreas": [
+      "segmentations/pancreas.nii.gz",
+      "segmentations/_pancreas_.nii.gz"
+    ],
+    "colon": [
+      "segmentations/colon.nii.gz",
+      "segmentations/_colon_.nii.gz"
+    ]
+  },
+
+  "organ_segments": {
+    "liver_segments": [
+      "segmentations/liver_segment*.nii.gz"
+    ],
+    "pancreas_segments": [
+      "segmentations/pancreas_head.nii.gz",
+      "segmentations/pancreas_body.nii.gz",
+      "segmentations/pancreas_tail.nii.gz"
+    ],
+    "kidney_segments": [
+      "segmentations/kidney_left.nii.gz",
+      "segmentations/kidney_right.nii.gz"
+    ]
+  },
+
+  "lesion_masks": {
+    "liver": {
+      "tumor": [
+        "segmentations/liver_tumor.nii.gz",
+        "segmentations/hepatic_tumor.nii.gz"
+      ],
+      "cyst": [
+        "segmentations/liver_cyst.nii.gz",
+        "segmentations/hepatic_cyst.nii.gz"
+      ],
+      "lesion": [
+        "segmentations/liver_lesion.nii.gz",
+        "segmentations/hepatic_lesion.nii.gz"
+      ]
+    },
+
+    "kidney": {
+      "tumor": [
+        "segmentations/kidney_tumor.nii.gz",
+        "segmentations/renal_tumor.nii.gz"
+      ],
+      "cyst": [
+        "segmentations/kidney_cyst.nii.gz",
+        "segmentations/renal_cyst.nii.gz"
+      ],
+      "lesion": [
+        "segmentations/kidney_lesion.nii.gz",
+        "segmentations/renal_lesion.nii.gz"
+      ]
+    },
+
+    "pancreas": {
+      "lesion": [
+        "segmentations/pancreas_lesion.nii.gz",
+        "segmentations/pancreatic_lesion.nii.gz"
+      ],
+      "pdac": [
+        "segmentations/pancreas_pdac.nii.gz",
+        "segmentations/pancreatic_pdac.nii.gz"
+      ],
+      "pnet": [
+        "segmentations/pancreas_pnet.nii.gz",
+        "segmentations/pancreatic_pnet.nii.gz"
+      ]
+    },
+
+    "colon": {
+      "lesion": [
+        "segmentations/colon_lesion.nii.gz"
+      ]
+    }
+  }
+}
